@@ -1,0 +1,438 @@
+:root{
+    --Pink: hsl(322, 100%, 66%);
+--Light-Pink: hsl(321, 100%, 78%);
+--Light-Red: hsl(0, 100%, 63%);
+
+--Very-Dark-Cyan: hsl(192, 100%, 9%);
+--Very-Pale-Blue: hsl(207, 100%, 98%);
+font-family: 'Open Sans', sans-serif;
+font-size: 62.5%;
+
+}
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 1.6rem;
+    text-align: center;
+    background-color: #ffff;
+}
+
+img{
+    max-width: 100%;
+}
+
+h1,h2,h3{
+    font-family: 'Poppins', sans-serif;
+}   
+
+header{
+    padding-inline: 2rem;
+    padding-block: 3.2rem 9.6rem;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 12rem;
+}
+.ctabtn
+{
+    margin-left: auto;
+    text-decoration: none;
+    color: var(--Pink);
+    padding: .5rem 2rem;
+    border: 1px solid var(--Pink);
+    border-radius: 10rem;
+   
+
+}
+
+.hero{
+    color: var(--Very-Dark-Cyan);
+    padding-inline: 2rem;
+ 
+}
+.hero h1{
+    font-size: 2.8rem;
+    margin-block: 2rem;
+}
+
+.hero a{
+    text-decoration: none;
+    padding: 1rem 3rem;
+    font-weight: 600;
+    background-color: var(--Pink);
+    color: #ffff;
+    border-radius: 5rem;
+    display: inline-block;
+    margin-block: 3rem 6rem;
+}
+.usage-track{
+    display: block;
+    margin-inline: auto;
+    padding: 8rem;
+    padding-block-end: 0;
+}
+.communities-count-track{
+    margin-block: 0 8rem;
+}
+
+.usage-track__head{
+    font-family: 'Poppins', sans-serif;
+    font-size: 6rem;
+   display: inline;
+  position: relative;
+}
+
+.usage-track__head::before{
+    content: "";
+    display: block;
+    background-image: url("images/icon-communities.svg");
+    background-repeat: no-repeat;
+    width: 2.8rem;
+    height: 2.8rem;
+    background-size: contain;
+    position: absolute;
+    left: -0.9rem;
+    top: -2.5rem;
+    transform: none;
+    
+}
+.usage-track__head_secound::before{
+    background-image: url("images/icon-messages.svg");
+    transform:translate(1.1rem ,0);
+}
+.card{
+    padding-inline: 3rem;
+    padding-block: 18rem 12rem;
+    color: var(--Very-Dark-Cyan);
+    font-size: 1.5rem;
+    z-index: 1;
+}
+
+.card h2{
+    margin-block: 6rem 2rem;
+}
+.card > *{
+    position: relative;
+    z-index: 1;
+}
+.card-1{
+  background-image: url("images/bg-section-top-mobile-1.svg"),
+                     url("images/bg-section-bottom-mobile-1.svg");
+  background-repeat: no-repeat;
+  background-position: top, bottom;
+  background-size: 100% 12%,100% 6%;
+   position: relative;  
+   
+}
+.card-1::before{
+    content: "";
+    display: block;
+    position: absolute;
+    inset: 0;
+    top: 12%;
+    bottom: 5%;
+    z-index: 0;
+    background-color: var(--Very-Pale-Blue);
+
+}
+.card-3{
+    background-image: url("images/bg-section-top-mobile-2.svg"),
+                       url("images/bg-section-bottom-mobile-2.svg");
+    background-repeat: no-repeat;
+    background-position: top, bottom;
+    background-size: 100% 12%,100% 12%;
+    padding-block: 18rem 16rem;
+     position: relative;  
+ 
+  }
+  .card-3::before{
+      content: "";
+      display: block;
+      position: absolute;
+      inset: 0;
+      top: 12%;
+      bottom: 12%;
+      z-index: 0;
+      background-color: var(--Very-Pale-Blue);
+  
+  }
+  
+
+.fcard{
+    padding-inline: 2rem;
+    padding-block: 4rem 15rem;
+}
+.f-cta-btn{
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--Pink);
+    color: #ffff;
+    margin-block: 3rem;
+    padding: 1rem 4rem;
+    border-radius: 5rem;
+}
+.footer{
+    color: #ffff;
+    text-align: left;
+    padding-inline: 2rem;
+    position: relative; 
+    background-image: url("images/bg-footer-top-mobile.svg");
+    background-repeat: no-repeat;
+background-position: top;
+    background-size: 100% 12% ;
+}
+.footer::before{
+    content: "";
+    display: block;
+    position: absolute;
+    inset: 0;
+    top: 10%;
+   background-color: var(--Very-Dark-Cyan);
+  
+}
+.footer > *{
+    position: relative;
+    z-index: 1;
+}
+
+.f-logo{
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(256deg) brightness(104%) contrast(102%);
+}
+.newsletter-card{
+    
+    padding-block: 10rem 6rem;
+}
+
+.newsletter-card .title{
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.newsletter-card p{
+    margin-block: 1.5rem 2rem;
+}
+.newsletter-card input{
+    display: block;
+    width: 100%;
+    padding-block: 1rem;
+    border-radius: .5rem;
+}
+.newsletter-card button{
+    display: block;
+    margin-left: auto;
+     color: #ffff;
+     background-color: var(--Pink);
+     padding: 1rem 3rem;
+     border-radius: .5rem;
+     margin-block-start: 1rem;
+    
+}
+.f-logo{
+    width: 55%;
+    margin-block-end: 2rem;
+}
+address p{
+    margin-block-end: 2rem;
+}
+address a{
+    display: block;
+    text-decoration: none;
+    color: #ffff;
+    margin-block: 1.2rem;
+}
+address img{
+    padding-inline-end: 1rem;
+}
+.footer__socailLink{
+    list-style: none;
+    display: flex;
+    padding-block: 3rem;
+}
+
+.footer__socailLink img{
+    width: 2rem;
+    height: 2rem;
+    margin-inline: .8rem;
+    border-radius: .4rem;
+    
+    }
+    .footer__socailLink li:nth-child(odd) img{
+        background-color: #ffff;
+        padding: 2px;
+    }
+@media (min-width:700px){
+header{
+    padding-block: 8rem 12rem;
+    max-width: 130rem;
+    margin-inline: auto;
+    
+}
+    .logo{
+        width: 20rem;
+    }
+    .ctabtn
+    {
+        margin-left: auto;
+        text-decoration: none;
+        color: var(--Pink);
+        padding: 1rem 4rem;
+        border: 1px solid var(--Pink);
+        border-radius: 10rem;
+       
+    
+    }
+   .hero{
+max-width: 105rem;
+margin-inline: auto;
+margin-block-start: 6rem;
+
+     }
+
+     .hero h1{
+font-size: 4.5rem;
+margin-block: 2rem;
+     }
+.hero p{
+    max-width: 50ch;
+    font-size: 2rem;
+    margin-inline: auto;
+    margin-block: 2rem;
+
+}
+
+.hero a{
+   
+    padding: 2rem 6rem;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-block: 2rem 8rem;
+}
+.usage-track{
+   margin-inline: auto;
+   display: flex;
+   justify-content: space-between;
+    padding: 8rem;
+    padding-block-end: 0;
+}
+.communities-count-track{
+    margin-block: 0 8rem;
+}
+
+
+.hero .usage-track__head{
+    font-family: 'Poppins', sans-serif;
+    font-size: 8rem;
+   display: inline;
+  position: relative;
+}
+
+.card{
+display: flex;
+flex-direction: row-reverse;
+align-items: center;
+justify-content: space-evenly;
+text-align: left;
+}
+.card > *{
+width: 35%;
+}
+.card-2{
+flex-direction: row;
+}
+.card h2{
+font-size: 3.6rem;
+}
+.card p{
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+.fcard h2{
+font-size: 4rem;
+}
+.card-1{
+ 
+    background-image: url("images/bg-section-top-desktop-1.svg"),
+                       url("images/bg-section-bottom-desktop-1.svg");
+                    }
+.card-3{
+    background-image: url("images/bg-section-top-desktop-2.svg"),
+                       url("images/bg-section-bottom-desktop-2.svg");
+                    }
+.f-cta-btn{
+    font-size: 2rem;
+    font-weight: 800;
+    margin-block: 3.5rem;
+    padding: 2.5rem 10rem;
+}
+.f-logo{
+    width: 20rem;
+}
+.footer{
+    display: flex;
+align-items: flex-start;
+justify-content: space-evenly;
+flex-direction: row-reverse;
+padding-top: 18rem;
+
+background-image: url("images/bg-footer-top-desktop.svg");
+background-size: 100% 32%;
+
+}
+.footer::before{
+    top: 32%;
+}
+.footer > *{
+width: 40%;
+margin-block: 0;
+padding-block: 0;
+}
+address p{
+max-width: 36ch;
+}
+.newsletter-card p{
+max-width: 41ch;
+}
+.ctafsection{
+display: flex;
+
+}
+.ctafsection input{
+width: 55%;
+}
+.ctafsection button{
+margin-left: 2.5rem;
+margin-block: 0;
+}
+.footer__socailLink img{
+    width: 2.8rem;
+    height: 2.8rem;
+    margin-inline: .8rem;
+    border-radius: .4rem;
+    
+    }
+    .footer__socailLink li:nth-child(odd) img{
+        background-color: #ffff;
+        padding: 2px;
+    }
+}
+
+
+input:hover{
+    cursor: pointer;
+}
+button:hover,
+a:hover{
+cursor: pointer;
+opacity: .7;
+}
+.footer__socailLink li img:hover{
+    background-color: hsla(184, 100%, 51%,.5);
+    cursor: pointer;
+}
